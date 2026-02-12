@@ -225,3 +225,10 @@ footer {
     .hamburger { display: block; font-size: 1.5rem; cursor: pointer; }
 }
 @media (min-width: 769px) { .hamburger { display: none; } }
+
+.video-thumbnail iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+}
