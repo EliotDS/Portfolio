@@ -3,119 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Rédacteur | Maxime Pech Style</title>
+    <title>Portfolio Rédacteur | Eliot DS</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="#" class="logo">ELIOT<span class="accent">.DS</span></a>
-            <ul class="nav-links">
-                <li><a href="#portfolio">Projets</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#contact" class="btn-nav">Me Contacter</a></li>
+    <aside class="sidebar">
+        <div class="profile-container">
+            <img src="https://placehold.co/200x200/1a1a1a/FFF?text=Eliot+DS" alt="Eliot DS" class="avatar">
+            
+            <h1 class="profile-name">ELIOT<span style="color:var(--accent)">.DS</span></h1>
+            
+            <div class="badge-container">
+                <span class="badge">Rédacteur & <strong>Créateur</strong></span>
+            </div>
+            
+            <p class="profile-description">
+                Je transforme votre idée en <span style="color:var(--accent)">script viral</span>.
+                <br><br>
+                Spécialisé dans le format court (TikTok, Reels) et les vidéos YouTube longues.
+            </p>
+        </div>
+        
+        <div class="clients-section">
+            <h2 class="sidebar-title">Statistiques</h2>
+            <p class="text-muted">+340k Vues cumulées</p>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#portfolio"><i class="fas fa-pen-nib"></i> Mes Scripts</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Mes Services</a></li>
+                <li><a href="#contact"><i class="fas fa-paper-plane"></i> Me Contacter</a></li>
             </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </aside>
 
-    <header class="hero">
-        <div class="container hero-content">
-            <span class="tag">Rédacteur et Créateur </span>
-            <h1>Je transforme votre idée en <br><span class="text-gradient">script viral</span>.</h1>
-            <p>Spécialisé dans le format court (TikTok, Reels) et les vidéos YouTube longue.</p>
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">Voir mes travaux</a>
-                <a href="#contact" class="btn btn-secondary">Réserver un appel</a>
+    <main class="main-content">
+        
+        <section class="section networks-section">
+            <h2 class="section-title align-left">Mes Réseaux</h2>
+            <div class="networks-grid">
+                <div class="network-card">
+                    <div class="network-header">
+                        <i class="fab fa-x-twitter network-icon"></i>
+                        <div>
+                            <h3>X / Twitter</h3>
+                            <p>@EliotDS</p>
+                        </div>
+                    </div>
+                    <a href="#" target="_blank" class="btn btn-network btn-twitter">Me suivre</a>
+                </div>
+                
+                <div class="network-card">
+                    <div class="network-header">
+                        <i class="fab fa-linkedin network-icon" style="color:#0077b5"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Eliot DS</p>
+                        </div>
+                    </div>
+                    <a href="#" target="_blank" class="btn btn-network" style="background:#0077b5; color:white;">Me connecter</a>
+                </div>
             </div>
-        </div>
-        <div class="glow-effect"></div>
-        <a href="#portfolio" class="scroll-down">
-    <i class="fas fa-chevron-down"></i>
-</a>
-    </header>
+        </section>
 
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2 class="section-title">Mes Travaux</h2>
+        <section id="portfolio" class="section">
+            <h2 class="section-title align-left">Mes Travaux</h2>
             <div class="grid-gallery">
+                
                 <div class="card">
                     <div class="video-thumbnail">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9a_f4RMjmu8?si=DtDYkBObt752AzZO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9a_f4RMjmu8?si=DtDYkBObt752AzZO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="card-info">
                         <h3>180k vues</h3>
                         <p>Vidéo Simpsons</p>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="video-thumbnail">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ig85E8NK9hU?si=kLretY4liV11R1rd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ig85E8NK9hU?si=kLretY4liV11R1rd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="card-info">
                         <h3>70k vues</h3>
                         <p>Histoire complète</p>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="video-thumbnail">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WC-HPfGpa5E?si=5YvW4OP8iqJ_I7ST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WC-HPfGpa5E?si=5YvW4OP8iqJ_I7ST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="card-info">
                         <h3>90k vues</h3>
                         <p>Théorie One Piece</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="services" class="section bg-darker">
-        <div class="container">
-            <h2 class="section-title">Ce que je propose</h2>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <h2 class="section-title align-left">Ce que je propose</h2>
             <div class="services-grid">
+                
                 <div class="service-box">
-                    <i class="fas fa-cut icon"></i>
-                    <h3>Rédaction de script</h3>
-                    <p>Recherches, plan optimisé et écriture complète</p>
+                    <i class="fas fa-keyboard icon"></i> <h3>Rédaction de script</h3>
+                    <p>Recherches, plan optimisé et écriture complète pour captiver votre audience.</p>
                 </div>
+                
                 <div class="service-box">
                     <i class="fas fa-mobile-alt icon"></i>
                     <h3>Short & TikTok</h3>
-                    <p>Hook, rétention et CTA optimisés</p>
+                    <p>Hook percutant, rétention maximale et CTA optimisés pour l'algorithme.</p>
                 </div>
+                
                 <div class="service-box">
-                    <i class="fas fa-magic icon"></i>
-                    <h3>Conception de sujets</h3>
-                    <p>Analyses et recherches en appel</p>
+                    <i class="fas fa-brain icon"></i> <h3>Conception de sujets</h3>
+                    <p>Analyses de marché et recherches de sujets viraux en appel.</p>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="contact" class="section contact-section">
-        <div class="container contact-content">
-            <h2>Prêt à passer au niveau supérieur&nbsp;?</h2>
-            <p>Discutons de votre projet et voyons comment je peux vous aider à gagner du temps.</p>
-            <a href="mailto:votre-email@gmail.com" class="btn btn-primary btn-large">Travailler avec moi</a>
-            
-            <div class="socials">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Maxime Pech Clone. Tous droits réservés.</p>
-    </footer>
+        <section id="contact" class="section contact-section-inline">
+            <h2 class="section-title align-left">On collabore ?</h2>
+            <p>Discutons de vos idées et transformons-les en scripts qui convertissent.</p>
+            <br>
+            <a href="mailto:votre-email@gmail.com" class="btn btn-primary btn-large">Me Contacter par Email</a>
+        </section>
+
+    </main>
 
     <script src="script.js"></script>
 </body>
