@@ -157,3 +157,7 @@ h1, h2, h3 { font-family: var(--font-header); font-weight: 700; }
     .avatar { margin: 0 auto 1.5rem; }
     .sidebar-nav ul { flex-direction: row; justify-content: center; flex-wrap: wrap; }
 }
+/* --- Effet de Zoom au Survol des Cartes Réseaux --- */
+.network-card:hover {
+    transform: translateY(-5px) scale(1.05); /* Combine le léger soulèvement et le zoom */
+}
