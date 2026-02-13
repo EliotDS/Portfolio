@@ -157,3 +157,20 @@ h1, h2, h3 { font-family: var(--font-header); font-weight: 700; }
     .avatar { margin: 0 auto 1.5rem; }
     .sidebar-nav ul { flex-direction: row; justify-content: center; flex-wrap: wrap; }
 }
+/* --- Couleurs Discord --- */
+:root {
+    --discord-color: #5865F2; /* Violet officiel Discord */
+}
+
+.discord-icon {
+    color: var(--discord-color);
+}
+
+.btn-discord {
+    background: var(--discord-color);
+    color: white;
+}
+
+.btn-discord:hover {
+    background: #4752c4; /* Violet un peu plus foncé au survol */
+}
