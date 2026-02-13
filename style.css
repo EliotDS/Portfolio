@@ -161,3 +161,18 @@ h1, h2, h3 { font-family: var(--font-header); font-weight: 700; }
 .network-card:hover {
     transform: translateY(-5px) scale(1.05); /* Combine le léger soulèvement et le zoom */
 }
+/* --- MISE À JOUR : EFFET ZOOM SUR TRAVAUX ET SERVICES --- */
+
+/* 1. Effet sur les cartes projets (Mes Travaux) */
+.card:hover {
+    /* On combine le soulèvement de 10px existant AVEC un léger zoom */
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* 2. Effet sur les boîtes de services (Ce que je propose) */
+.service-box:hover {
+    /* On combine le soulèvement de 5px existant AVEC un léger zoom */
+    transform: translateY(-5px) scale(1.05);
+    /* On s'assure que le texte reste net */
+    backface-visibility: hidden;
+}
