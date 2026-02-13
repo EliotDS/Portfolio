@@ -262,3 +262,38 @@ footer {
         transform: translateX(-50%) translateY(-5px);
     }
 }
+/* --- AMÉLIORATION DES EFFETS DE SURVOL (HOVER) --- */
+
+/* 1. Pour les Projets (Mes Travaux) */
+.card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animation avec un léger rebond fluide */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Bordure presque invisible au repos */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* La carte monte de 10 pixels */
+    border-color: var(--accent); /* La bordure devient bleue */
+    box-shadow: 0 15px 30px -10px rgba(59, 130, 246, 0.3); /* Effet de lueur (Glow) derrière */
+    background: #1a1a1a; /* Le fond s'éclaircit très légèrement */
+}
+
+/* 2. Pour les Services (Ce que je propose) */
+.service-box {
+    transition: all 0.3s ease;
+    border: 1px solid transparent; /* Prépare la bordure */
+    position: relative;
+    overflow: hidden;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    background: #151515;
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* Bonus : Faire bouger l'icône dans les services */
+.service-box:hover .icon {
+    transform: scale(1.2) rotate(5deg); /* Grossit et penche un peu */
+    text-shadow: 0 0 15px var(--accent); /* L'icône s'illumine */
+    transition: all 0.3s ease;
+}
