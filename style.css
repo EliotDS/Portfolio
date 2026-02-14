@@ -174,3 +174,41 @@ h1, h2, h3 { font-family: var(--font-header); font-weight: 700; }
 .btn-discord:hover {
     background: #4752c4; /* Violet un peu plus foncé au survol */
 }
+/* --- STYLE SPÉCIFIQUE POUR LES SHORTS & LA DIVISION --- */
+
+/* Titres des sous-sections (Longues vs Shorts) */
+.subsection-title {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 4px solid var(--accent); /* Petite barre bleue décorative */
+    padding-left: 15px;
+}
+
+/* Espace entre les deux parties */
+.spacer {
+    height: 4rem; /* Espace vide */
+    width: 100%;
+    border-bottom: 1px dashed rgba(255,255,255,0.1); /* Ligne de séparation discrète */
+    margin-bottom: 4rem;
+}
+
+/* Grille spécifique pour les Shorts (plus de colonnes si possible) */
+.shorts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Les cartes sont moins larges */
+}
+
+/* Format Vertical pour les miniatures Shorts (9:16) */
+.vertical-thumbnail {
+    height: 380px !important; /* Force la hauteur verticale */
+    background: #000;
+}
+
+/* Ajustement de l'iframe à l'intérieur */
+.vertical-thumbnail iframe {
+    object-fit: cover;
+}
